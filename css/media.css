@@ -1,0 +1,281 @@
+/*************************************************************/
+/* BELLOW 1440 px (Desktops)*/
+/*************************************************************/
+
+@media (max-width: 77em) {
+  .section-margin {
+    margin-bottom: 4.8rem;
+  }
+
+  .subscribe {
+    position: absolute;
+    top: 2.4rem;
+    right: 5rem;
+  }
+
+  .heading-text {
+    font-size: 4.8rem;
+    font-weight: 700;
+  }
+
+  .hero-subtext {
+    font-size: 1.8rem;
+  }
+}
+
+/*************************************************************/
+/* BELLOW 1000 px (Tablets)*/
+/*************************************************************/
+
+@media (max-width: 62.5em) {
+  html {
+    /* 9px/16px */
+    font-size: 50%;
+  }
+  .hero-text {
+    padding: 4.8rem 6rem;
+  }
+
+  .hero-img {
+    position: absolute;
+    left: 33rem;
+    top: 0;
+    pointer-events: none;
+    width: 85%;
+  }
+}
+
+/*************************************************************/
+/* BELLOW 784 px (Smaller Tablets)*/
+/*************************************************************/
+
+@media (max-width: 49em) {
+  html {
+    /* 9px/16px */
+    font-size: 40%;
+  }
+
+  .section-hero {
+    height: 70vh;
+  }
+
+  .subscribe {
+    right: 15rem;
+  }
+
+  .heading-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .hero-img {
+    position: absolute;
+    left: 28rem;
+    top: 0;
+    pointer-events: none;
+    width: 75%;
+  }
+
+  .section-margin {
+    margin-bottom: 6.4rem;
+  }
+
+  .cards {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .card {
+    margin-bottom: 1.2rem;
+  }
+
+  .img-container {
+    margin-bottom: 2.4rem;
+  }
+  .heading-train {
+    margin-top: 6.4rem;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+  }
+
+  .img-container::after {
+    height: 4rem;
+    bottom: -0.6rem;
+  }
+
+  .subscribe-form {
+    width: 70%;
+  }
+}
+
+/*************************************************************/
+/* BELLOW 600 px (Smaller Tablets)*/
+/*************************************************************/
+
+@media (max-width: 37.5em) {
+  .section-hero {
+    height: 50vh;
+  }
+  .hero-img {
+    left: 45%;
+    transform: translate(-50%, 0%);
+    top: 0;
+    width: 100%;
+  }
+
+  .hero-text {
+    width: 100%;
+    color: #0a2919;
+    background-color: #ebfaf2;
+    padding: 2.4rem 6.4rem;
+    position: absolute;
+    top: 80%;
+    z-index: -1;
+  }
+
+  .cards {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4.8rem;
+  }
+
+  .form {
+    border-bottom: 0.5px solid #ccc;
+    padding: 0 1.2rem 8.4rem 1.2rem;
+  }
+  .subscribe-form {
+    width: 97%;
+  }
+
+  .grid-4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-about-me {
+    width: 40%;
+    height: 70%;
+    padding: 0.8rem 1.8rem;
+  }
+
+  .about-heading {
+    font-size: 3.2rem;
+  }
+
+  .about-subheading {
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .img-about-me {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+  }
+
+  .img-about {
+    width: 100%;
+    border: 5px solid #d6f5e5;
+  }
+
+  .img-about-me::after {
+    width: 40%;
+  }
+}
+
+/*************************************************************/
+/* BELLOW 450 px (Mobile)*/
+/*************************************************************/
+@media (max-width: 28rem) {
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .hero-img {
+    left: 45%;
+    transform: translate(-50%, 0%);
+    top: 0%;
+    width: 120%;
+    z-index: -1;
+  }
+  .hero-text {
+    width: 100%;
+    color: #0a2919;
+    background-color: #ebfaf2;
+    padding: 1.2rem 6rem;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+  }
+  .main-nav {
+    background-color: #d6f5e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide the navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .navigation-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .navigation-links a {
+    color: #111;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .subscribe {
+    position: absolute;
+    top: 70%;
+    left: 20rem;
+  }
+  .learn-more {
+    top: 100%;
+    left: 10%;
+  }
+
+  .subscribe-form {
+    width: 97%;
+  }
+}
